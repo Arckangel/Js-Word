@@ -44,6 +44,7 @@ function Tester(){
     palindrome.innerHTML = "Non";
   }
 
+  // --------Afficher l'historique  des mots recherchés---------- //
   var histo = document.getElementById("historique");
   histo.innerHTML = mot +"<br>" + histo.innerHTML;
 }
