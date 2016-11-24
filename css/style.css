@@ -1,0 +1,52 @@
+body{
+  background-image: url(../image/fond.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family:cursive;
+}
+
+@font-face {
+  font-family: police;
+  src: url(../font/LeyFont.ttf);
+}
+
+h1{
+  font-weight: normal;
+  font-size: 60px;
+  font-family: police;
+  text-align: center;
+}
+
+table{
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 40px;
+}
+
+td{
+  height: 50px;
+  border: 1px solid white;
+}
+
+.col1{
+  width: 200px;
+  background-color: rgba(200,200,200,0.5);
+}
+
+.col2{
+  width: 300px;
+  background-color: rgba(250,250,250,0.5);
+}
+
+.saisie{
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+
+input{
+  text-align: center;
+}

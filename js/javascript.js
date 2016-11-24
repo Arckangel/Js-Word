@@ -24,25 +24,25 @@ function Tester(){
   var lettres = mot.toLowerCase().split('');
   var voy = 0;
   for (var i = 0; i < lettres.length; i++) {
-    if (lettres[i]=="a"||lettres[i]=="e"||lettres[i]=="i"||lettres[i]=="o"||lettres[i]=="u"||lettres[i]=="y"){
+    if (lettres[i]=="a"||lettres[i]=="e"||lettres[i]=="i"||lettres[i]=="o"||lettres[i]=="u"||lettres[i]=="y"||lettres[i]=="é"||lettres[i]=="è"||lettres[i]=="à"||lettres[i]=="ù"||lettres[i]=="ê"){
       voy = voy+1;
     }
   }
   var cons = lettres.length - voy;
-  nombre.innerHTML = "Le mot contient " + voy + " voyelles et " + cons + " consonnes";
+  nombre.innerHTML = voy + " voyelles et " + cons + " consonnes";
 
   // --------Afficher le mot à l'envers--------------------------- //
   var inv = "";
   for (var j = mot.length-1; j >= 0; j--) {
     inv+=mot[j];
   }
-  inverse.innerHTML = "Le mot à l'envers est '" + inv + "'";
+  inverse.innerHTML = inv;
 
   // --------Afficher s'il s'agit d'un palindrome ou non---------- //
   if(inv.toLowerCase()==mot.toLowerCase()){
-    palindrome.innerHTML = mot + " est un palindrome";
+    palindrome.innerHTML = "Oui";
   }
   else{
-    palindrome.innerHTML = mot + " n'est pas un palindrome";
+    palindrome.innerHTML = "Non";
   }
 }
