@@ -22,7 +22,8 @@ table{
   text-align: center;
   border-collapse: collapse;
   margin: auto;
-  margin-top: 40px;
+  float: left;
+  margin-left: 30%;
 }
 
 td{
@@ -41,12 +42,36 @@ td{
 }
 
 .saisie{
-  width: 300px;
-  margin: auto;
   text-align: center;
+  margin: auto;
+}
+
+#reponse{
+    margin-top: 15px;
+}
+
+#bouton{
+  margin-top: 30px;
+}
+
+#global{
+  width: 100%;
+  height: 350px;
   margin-top: 40px;
 }
 
 input{
   text-align: center;
+}
+
+#historique{
+  font-style: italic;
+  color: rgba(60,60,60,0.5);
+  height: 322px;
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+#historique:first-child{
+  color: purple;
 }

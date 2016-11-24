@@ -1,5 +1,3 @@
-
-
 function Tester(){
   var mot = document.getElementById("reponse").value;
   var gra = document.getElementById("mot1");
@@ -34,7 +32,7 @@ function Tester(){
   // --------Afficher le mot à l'envers--------------------------- //
   var inv = "";
   for (var j = mot.length-1; j >= 0; j--) {
-    inv+=mot[j];
+    inv += mot[j];
   }
   inverse.innerHTML = inv;
 
@@ -45,4 +43,7 @@ function Tester(){
   else{
     palindrome.innerHTML = "Non";
   }
+
+  var histo = document.getElementById("historique");
+  histo.innerHTML = mot +"<br>" + histo.innerHTML;
 }

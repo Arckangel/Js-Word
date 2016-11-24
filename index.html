@@ -8,65 +8,67 @@
   <body>
 
     <h1>Saisir un mot</h1>
+      <div id="global">
+        <table>
+          <tr>
+            <td class="col1">
+              <p>En gras coloré</p>
+            </td>
+            <td class="col2">
+              <p id="mot1"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="col1">
+              <p>En minuscules</p>
+            </td>
+            <td class="col2">
+              <p id="mot2"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="col1">
+              <p>En majuscules</p>
+            </td>
+            <td class="col2">
+              <p id="mot3"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="col1">
+              <p>Composition</p>
+            </td>
+            <td class="col2">
+              <p id="nbcv"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="col1">
+              <p>Inversé</p>
+            </td>
+            <td class="col2">
+              <p id="reverse"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="col1">
+              <p>Palindrome</p>
+            </td>
+            <td class="col2">
+              <p id="palin"></p>
+            </td>
+          </tr>
+        </table>
 
-      <table>
-        <tr>
-          <td class="col1">
-            <p>En gras coloré</p>
-          </td>
-          <td class="col2">
-            <p id="mot1"></p>
-          </td>
-        </tr>
-        <tr>
-          <td class="col1">
-            <p>En minuscules</p>
-          </td>
-          <td class="col2">
-            <p id="mot2"></p>
-          </td>
-        </tr>
-        <tr>
-          <td class="col1">
-            <p>En majuscules</p>
-          </td>
-          <td class="col2">
-            <p id="mot3"></p>
-          </td>
-        </tr>
-        <tr>
-          <td class="col1">
-            <p>Voyelles et consonnes</p>
-          </td>
-          <td class="col2">
-            <p id="nbcv"></p>
-          </td>
-        </tr>
-        <tr>
-          <td class="col1">
-            <p>Inversé</p>
-          </td>
-          <td class="col2">
-            <p id="reverse"></p>
-          </td>
-        </tr>
-        <tr>
-          <td class="col1">
-            <p>Palindrome</p>
-          </td>
-          <td class="col2">
-            <p id="palin"></p>
-          </td>
-        </tr>
-      </table>
+        <div id="historique"></div>
+
+      </div>
 
       <div class="saisie">
         <input id="reponse" type="text" name="reponse">
         <br>
-        <br>
         <input id="bouton" onclick="Tester()" type="submit" name="bouton">
       </div>
-
     <script src="js/javascript.js"></script>
   </body>
 </html>
